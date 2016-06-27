@@ -1,0 +1,47 @@
+/* ADD YOUR STYLES HERE */
+.pretty-table {
+  width: 100%;
+}
+
+.pretty-data {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+
+.pretty-header {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: black;
+  color: white;
+}
+
+.statnum {
+  font-weight: bold;
+  font-size: 250%;
+  text-align: center;
+}
+
+.statfollow {
+  color: grey;
+}
+
+.language-data {
+  width: 100%;
+}
+
+.chart-header {
+  width: 15%;
+}
+
+.bar-graph {
+  background-color: blue;
+  padding: 20px;
+  margin-left: 20px;
+  color: white;
+  border-radius: 0px 8px 8px 0px;
+}
