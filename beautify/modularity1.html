@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="framework.css">
     <link rel="stylesheet" href="main.css">
   </head>
-  <body>
+  <body id="fadeout">
   	<div class="instructions-container">
 
   		<ol class="instruction-list">
@@ -163,17 +163,16 @@
 	    		<p class="instruction-text">The lightbox should display arbitrary content, centered vertically and horizontally, with everything behind it (the rest of the page) darkened. It should obscure the entire screen, no matter where you are on the page. You may want to disable these styles when you're not actively working on them, otherwise they'll cover the whole page.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<div>
-			    		<div class="lightbox">
+			    	<a class="lightbox-trigger" id="hello" href= "javascript:void(0)" onclick = "document.getElementById('lightbox').style.display='block';document.getElementById('hello').style.display='none';document.getElementById('fadeout').style.backgroundColor='rgba(0, 0, 0, 0.7)'">Hello</a>
+			    		<div id="lightbox">
 				    		<div class="lightbox-info">
 					    		<h3>Hello</h3>
 						    	<p>Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears. Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
 						    	<div class="button-right">
-						    		<a class="button" href="#">Close</a>
+						    		<a class="button" href="javascript:void(0)" onclick = "document.getElementById('lightbox').style.display='none';document.getElementById('hello').style.display='block';document.getElementById('fadeout').style.backgroundColor='white'">Close</a>
 						    	</div>
 				    		</div>
 				    	</div>
-			    	</div>
 				    <!-- End editable area -->
 			    </div>
 			  </li>
@@ -184,7 +183,7 @@
 	    		<p class="instruction-text">A media block is a left-floated image with some content beside it. Think Facebook updates.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<img src="http://placehold.it/50">
+			    	<img class="floater" src="http://placehold.it/50">
 			    	<p>Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
 				    <!-- End editable area -->
 			    </div>
@@ -194,7 +193,7 @@
 		    	<!-- Edit here -->
 					<div class="instruction-answer">
 			    	<div>
-				    	<img src="http://placehold.it/50">
+				    	<img class= "floater" src="http://placehold.it/50">
 				    </div>
 			    	<div>
 				    	<h2>Cupcake Ipsum</h2>
@@ -208,14 +207,14 @@
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
 			    	<div>
-				    	<img src="http://placehold.it/50">
+				    	<img class="floater" src="http://placehold.it/50">
 				    </div>
 			    	<div>
 				    	<h2>Cupcake Ipsum</h2>
 				    	<p>Cupcake ipsum dolor sit amet gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
 
 				    	<div>
-					    	<img src="http://placehold.it/32">
+					    	<img class="floater" src="http://placehold.it/32">
 					    </div>
 				    	<div>
 					    	<h2>I like cupcakes!</h2>
@@ -223,7 +222,7 @@
 					    </div>
 
 				    	<div>
-					    	<img src="http://placehold.it/32">
+					    	<img class="floater" src="http://placehold.it/32">
 					    </div>
 				    	<div>
 					    	<h2>I like cupcakes, too!</h2>
